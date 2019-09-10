@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cormorant+Garamond|Montserrat|Quicksand|Raleway:200,300,400');
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;
+    background-color: #CFD2E7;
+}
+
+hr{
+    border-top: 1px solid #8494A8;
+    border-bottom: 0px;
+    margin-top: 5px;
+}
+
+h1{
+    font-family: "Cormorant Garamond";
+    font-size: 190%;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color:#544D67;
+}
+
+h2{
+    font-family: "Cormorant Garamond";
+    font-size: 160%;
+    font-weight: normal;
+    font-style: oblique;
+    margin-left: 5%;
+    color:#615878;
+}
+
+p, li, .p {
+    font-family: "Raleway";
+    font-size: 100%;
+    font-weight: lighter;
+    list-style: none;
+}
+
+li::before{
+    content: "⭒";
+    font-size:120%;
+    padding-right: 5px;
+}
+
+a {
+    color:#5D8094;
+}
+
+a:hover{
+    color:#575978;
+    text-decoration: none;
+}
+
+li a:hover, p a:hover {
+    color:#575978;
+    text-decoration: none;
+    font-style: oblique;
+    transition: .5s ease;
+}
+
+.name{
+    font-family: "Abril Fatface";
+    font-size: 220%;
+    display: block;
+    color: #362D3D;
+    margin: 2% 0 -3px 5px;
+}
+
+.navbar{
+    margin: -20px 0px 0;
+    padding: 20px 0px 0;
+    width: 100%;
+    background-color: #8494A8;
+    font-family: "Quicksand";
+    align-items: baseline;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer{
+    padding: 0 0px 20px;
+    background-color: #8494A8;
+    font-family: "Quicksand";
+    border-radius: 10px 10px 0 0;
+    /* position: absolute; */
+    flex-shrink: 0;
+    height: 8%;
+    bottom: 0;
+    right: 0;
+    left:0;
+}
+
+.footer-content{
+    padding: 10px 100px 0 0;
+}
+
+.nav-links{
+    position: relative;
+    font-family: "Quicksand";
+    font-size: 18px;
+    margin: 0 5px 5px 0;
+}
+
+.nav-links a{
+    padding: 8px 5px 0;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    background-size: 100% 160%;
+    background-image: linear-gradient(to bottom, #8494A8 50%, #5D8094 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: 1s;
+    border-radius: 8px 8px 0 0;
+}
+
+.nav-links a:hover{
+    color:#A9F2EB;
+    background-position: 0 100%;
+}
+
+.active{
+    background-color: #A9F2EB;
+    color: black;
+}
+
+.navbar-toggler{
+    float: left;
+    border: 0;
+    padding: 0;
+    margin: 15px 10px 0px 0px;
+}
+
+.navbar-nav{
+    justify-content: end;
+    margin-top: -5px;
+}
+
+.nav-link{
+    display: inline-block;
+}
+
+.navbar-collapse{
+    position: relative;
+    margin-left: -30px;
+}
+
+.container .nav {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    margin-top: -10px;
+}
+
+.adjust-row{
+    margin:10px;
+}
+
+/* .exp{
+    background:#B1BDCF;
+    position: relative;
+}
+
+.legend{
+    background-color: aqua;
+    position: relative;
+    top: -40px;
+    float: right;
+    padding: 0 5px;
+}
+
+.skills{
+    position: relative;
+    top: -40px;
+    color: #5D8094;
+    font-size: 150%;
+    margin: 121px 10px 10px 10px;
+} */
+
+.exp{
+    background:#B1BDCF;
+}
+
+.legend{
+    background-color: #8494A8;
+    font-family: "Quicksand";
+    font-size: 90%;
+    color: #362D3D;
+    font-style: oblique;
+    margin: -10px 0;
+    padding: 5px 10px;
+}
+
+.skills{
+    color: #5D8094;
+    font-size: 150%;
+    margin: 10px;
+}
+
+.img-thumbnail{
+    background: #8494A8;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {
+    opacity: 0.7;
+  }
+  
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    height: auto;
+    max-width: 90%;
+  }
+
+  
+  .modal-content,
+  #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }

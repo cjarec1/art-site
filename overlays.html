@@ -22,22 +22,66 @@
     </script>
 
     <div class="container">
-            <div class="col-lg-12">
-                    <h1>Overlays</h1>
-                        <div class="desc">
-                            <p class="desc-in">
-                                Overlays start at $15 each (price may be increased due to complexity)! I can do either a 
-                                general overlay (has one big window for whatever is being streamed) or a game overlay 
-                                (items are placed around the important features).<br/><br/>
-                                For multiple similar overlays, two are $25, three are $40, and four are $50. This only 
-                                goes for similar overlays that have similar elements: for example, a matching in-game and 
-                                out-of-game screen.<br/><br/>
-                                Please keep in mind that the overlays below are just examples! You don't have to choose one;
-                                they're merely showing you what I can do.<br/><br/>
-                                <i>Hover image for info, click image for bigger preview.</i>
-                            </p>
+        <div class="col-lg-12">
+            <h1>Overlays</h1>
+            <div class="desc">
+                <p class="desc-in">
+                    Overlays start at $15 each (price may be increased due to complexity)! I can do either a general overlay (has one big window
+                    for whatever is being streamed) or a game overlay (items are placed around the important features).<br/><br/>                    For multiple similar overlays, two are $25, three are $40, and four are $50. This only goes for similar
+                    overlays that have similar elements: for example, a matching in-game and out-of-game screen.<br/><br/>                    Please keep in mind that the overlays below are just examples! You don't have to choose one; they're
+                    merely showing you what I can do.<br/><br/>
+                    <i>Hover image for info, click image for bigger preview.</i>
+                </p>
+            </div>
+            <div class="page-content">
+                <div class="col-lg-6"><img class="myImages" id="myImg" src="img/ol1.png" height="" width="100%">
+                    <div class="caption">
+                        <div class="text">
+                            <span style="font-size: 20px; font-weight:bolder; color: #090614;">box overlay<br/></span>name at the top, social media, two spots for recents; best for displaying games that take up most of the screen
                         </div>
+                    </div>
                 </div>
+                <div class="col-lg-6"><img class="myImages" id="myImg" src="img/ol2.png" height="" width="100%">
+                    <div class="caption">
+                        <div class="text">
+                                <span style="font-size: 20px; font-weight:bolder; color: #090614;">basic overlay 1<br/></span>space for name, social media, recents, now playing; best for displaying images, no webcam, no twitch chat
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6"><img class="myImages" id="myImg" src="img/ol3.png" height="" width="100%">
+                    <div class="caption">
+                        <div class="text">
+                                <span style="font-size: 20px; font-weight:bolder; color: #090614;">basic overlay 2<br/></span>space for name, recents, twitch chat, webcam; best for an out-of-game screen, limited space for images
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6"><img class="myImages" id="myImg" src="img/ol4.png" height="" width="100%">
+                    <div class="caption">
+                        <div class="text">
+                                <span style="font-size: 20px; font-weight:bolder; color: #090614;">basic overlay 3<br/></span>space for name, recents, twitch chat, small image; best for an out-of-game screen, limited space for webcam
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6"><img class="myImages" id="myImg" src="img/ol6.png" height="" width="100%">
+                    <div class="caption">
+                        <div class="text">
+                                <span style="font-size: 20px; font-weight:bolder; color: #090614;">themed overlay<br/></span>space for webcam, twitch chats, recents; limited space for images, game
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -46,8 +90,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        
+    <script src="script.js"></script>
+
 </body>
 
 </html>

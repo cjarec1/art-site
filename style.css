@@ -67,13 +67,66 @@ li a:hover, p a:hover {
     width: 100%;
     /* float: right; */
     display: block;
-    margin: -20px auto;
+    margin: -20px auto 20px;
 }
 
 .desc-in{
     background-color: rgba(255,255,255,.1);
     padding: 5px 12px;
     margin-bottom: 0;
+}
+
+.page-content{
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-around;
+    
+}
+
+img{
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 15px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #303149;
+    z-index: -1;
+}
+
+.text {
+    font-family: "Raleway";
+    font-weight: lighter;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 9999;
+  }
+
+  
+
+.col-lg-6:hover .caption, .col-lg-3:hover .caption{
+    opacity: 1;
+}
+
+.col-lg-6{
+    margin-bottom: 20px;
 }
 
 .nav-img{
@@ -287,6 +340,13 @@ li a:hover, p a:hover {
         border-right: none;
         height: 100%;
     }
+
+    .page-content{
+        margin: 10px;
+        padding: 5px;
+        display: block;
+        justify-content: space-around;
+    }
 }
 
 /* Modal stuff */
@@ -295,7 +355,7 @@ li a:hover, p a:hover {
 }
 
 #myImg {
-    border-radius: 5px;
+    border-radius: 0px;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -311,7 +371,7 @@ li a:hover, p a:hover {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 50px;
+    padding-top: 20px;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -334,6 +394,12 @@ li a:hover, p a:hover {
     max-width: 90%;
   }
 
+  .modal-content-big {
+    margin: auto;
+    display: block;
+    height: auto;
+    max-height: 100%;
+  }
   
   .modal-content,
   #caption {
@@ -375,3 +441,5 @@ li a:hover, p a:hover {
 
   /* smaller than max-width; 900px or less
   max-width: 900px -> make things small */
+
+  

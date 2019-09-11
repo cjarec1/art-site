@@ -4198,7 +4198,7 @@ input[type="button"].btn-block {
   padding-left: 0;
 }
 
-.navbar-nav .dropdown-menu {
+.navbar-nav .-menu-menu {
   position: static;
   float: none;
 }

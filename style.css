@@ -100,7 +100,7 @@ li a:hover, p a:hover {
 .navbar{
     background-color: transparent;
     margin: -80px 0 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .navbar-nav .nav-link{
@@ -116,16 +116,16 @@ li a:hover, p a:hover {
     align-items: flex-start; */
     /* margin-top: -50px; */
     justify-content: space-around;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
-.navbar-nav{
+/* .navbar-nav{
     border: 2px solid yellow;
 }
 
 .nav-link{
     border: 2px solid lightgreen;
-}
+} */
 
 .nav-item{
     border: 2px solid black;
@@ -137,8 +137,12 @@ li a:hover, p a:hover {
     background-color: rgba(22, 17, 30, .5);
 }
 
-.nav-item:hover, .dropdown-item:hover{
-    background-color: rgba(22, 17, 30, .3) !important;
+.nav-item:hover{
+    background-color: rgba(22, 17, 30, .7) !important;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(22, 17, 30, .35) !important;
 }
 
 .dropdown-item.first:hover{
@@ -189,7 +193,8 @@ li a:hover, p a:hover {
 }*/
 
 .active{
-    background-color: #2A1F3D;
+    /* background-color: #2A1F3D; */
+    background-color: #00FFC8
 }
 
 .nav-item.active a{
